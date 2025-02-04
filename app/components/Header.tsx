@@ -13,7 +13,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-xl font-semibold">
-            ReWire
+            Rewire
           </Link>
           <nav className="hidden md:flex space-x-8">
             <NavLink href="#features">Features</NavLink>

@@ -45,7 +45,7 @@ export default function Hero() {
         >
           <Image
             src="/placeholder.svg"
-            alt="ReWire App Interface"
+            alt="Rewire App Interface"
             layout="fill"
             objectFit="cover"
             className="rounded-2xl shadow-2xl"

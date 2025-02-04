@@ -5,9 +5,9 @@ import type React from "react" // Import React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "ReWire - Overcome Addictions",
+  title: "Rewire - Overcome Addictions",
   description:
-    "ReWire is a mobile application designed to help individuals overcome addictions through a structured, AI-driven approach.",
+    "Rewire is a mobile application designed to help individuals overcome addictions through a structured, AI-driven approach.",
 }
 
 export default function RootLayout({
