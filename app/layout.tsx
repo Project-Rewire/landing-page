@@ -1,13 +1,14 @@
 import "./globals.css"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import type React from "react" // Import React
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
-  title: "Rewire - Overcome Addictions",
+export const metadata: Metadata = {
+  title: "Rewire - Overcome Addictions with AI Support",
   description:
-    "Rewire is a mobile application designed to help individuals overcome addictions through a structured, AI-driven approach.",
+    "Rewire is a mobile app designed to help individuals overcome addictions through AI-powered support, structured approaches, and a supportive community.",
 }
 
 export default function RootLayout({
@@ -16,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>{children}</body>
     </html>
   )
