@@ -34,14 +34,14 @@ export default function LandingPage() {
           </nav>
         </header>
         <main className="m-auto">
-          <section className="rounded-lg mt-24 w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-purple-900 via-black to-pink-900">
+          <section className="rounded-xl mt-24 w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-purple-900 via-transparent to-pink-900">
             <div className="container px-4 md:px-6">
-              <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="flex flex-col items-center space-y-4 text-center dark:text-white light:text-black">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                     Rewire Your Life, One Step at a Time
                   </h1>
-                  <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+                  <p className="mx-auto max-w-[700px] md:text-xl">
                     Overcome addictions with AI-powered support, a structured approach, and a supportive community.
                   </p>
                 </div>
@@ -51,14 +51,14 @@ export default function LandingPage() {
                       Download Now
                     </Button>
                   </Link>
-                  <Button variant="outline" className="text-white border-white hover:bg-white/10">
+                  <Button variant="outline" className="bg-transparent text-white">
                     Learn More
                   </Button>
                 </div>
               </div>
             </div>
           </section>
-          <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-900 dark:bg-black">
+          <section id="features" className="w-full py-12 md:py-24 lg:py-32 dark:bg-black">
             <div className="container px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Key Features</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -92,7 +92,7 @@ export default function LandingPage() {
               </div>
             </div>
           </section>
-          <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800 dark:bg-gray-950">
+          <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-950">
             <div className="container px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">How It Works</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -126,7 +126,7 @@ export default function LandingPage() {
               </div>
             </div>
           </section>
-          <section id="user-comments" className="w-full py-12 md:py-24 lg:py-32 bg-gray-900 dark:bg-black">
+          <section id="user-comments" className="w-full py-12 md:py-24 lg:py-32 dark:bg-black">
             <div className="container px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">What Our Users Say</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
