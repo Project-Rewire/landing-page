@@ -1,0 +1,13 @@
+.rewire-fade-in {
+    opacity: 0;
+    animation: rewire-fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes rewire-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

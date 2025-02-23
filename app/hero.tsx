@@ -6,6 +6,8 @@ import Link from "next/link"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 
+import "./animations.css";
+
 export default function Hero() {
   const { theme } = useTheme()
   const [mounted, setMounted] = useState(false)
@@ -60,7 +62,7 @@ export default function Hero() {
               <Image
                 src={theme === "dark" ? "/screens/get-started-dark.jpg": "/screens/get-started-light.jpg"}
                 alt="app" width={280} height={560} 
-                className={`w-full h-auto relative z-0 ${theme === "dark" && `opacity-75`}`} 
+                className={`w-full h-auto relative z-0 ${theme === "dark" && `opacity-75`} rewire-fade-in`} 
               />
             </div>
           </div>
