@@ -13,9 +13,9 @@ export default function AboutUs() {
             {[
               { name: "Shakeel Gadhafi", role: "Team Leader" },
               { name: "Isuru Karunaratna", role: "Team Member" },
-              { name: "Yasith Goonawardana", role: "Team Member" },
+              { name: "Yasith Gunawardhana", role: "Team Member" },
               { name: "Nidarsa Ragunathan", role: "Team Member" },
-              { name: "Harshana Malshan", role: "Team Member" },
+              { name: "Harshana Chamod", role: "Team Member" },
               { name: "Randul Arampola", role: "Team Member" },
             ].map((p) => (
               <div key={p.name} className="rounded-lg border bg-card p-8 text-center shadow-sm">
