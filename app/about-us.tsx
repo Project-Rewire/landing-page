@@ -3,7 +3,7 @@ export default function AboutUs() {
     <section>
         <div className="container py-24">
           <div className="text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight">About Us</h2>
+            <h2 className="mb-4 text-3xl font-bold tracking-tight">Meet Our Team</h2>
             <p className="mx-auto mb-16 max-w-2xl text-muted-foreground">
               Meet the dedicated team behind Rewire, committed to creating innovative solutions for addiction recovery
               and mental wellness.
