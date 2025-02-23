@@ -1,9 +1,10 @@
 import { ThemeProvider } from "@/components/theme-provider"
 
-import HowItWorks from "./how-it-works"
-import Features from  "./features"
-import AboutUs from  "./about-us"
-import Footer from  "./footer"
+import HowItWorks  from "./how-it-works"
+import Features  from  "./features"
+import AboutUs  from  "./about-us"
+import Pricing  from "./pricing"
+import Footer  from "./footer"
 import Navbar from "./navbar"
 import Hero  from "./hero"
 
@@ -14,8 +15,9 @@ export default function Page() {
       <Hero  />
       <main className="flex items-center flex-col mx-16">
         <HowItWorks />
-        <Features />
-        <AboutUs />
+        <Features  />
+        <AboutUs  />
+        <Pricing />
         <Footer />
       </main>
     </ThemeProvider>
