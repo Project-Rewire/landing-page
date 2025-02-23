@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-3xl shadow-2xl max-w-[220px] sm:max-w-[260px] md:max-w-[280px]">
             <div className={`absolute inset-0 z-10 ${theme === "dark" ? "bg-gradient-to-r from-fuchsia-900/10 from-40% to-green-900/5" : "bg-white/10"}`}></div>
               <Image
-                src={theme === "dark" ? "/screens/get-started-dark.png": "/screens/get-started-light.png"}
+                src={theme === "dark" ? "/screens/get-started-dark.jpg": "/screens/get-started-light.jpg"}
                 alt="app" width={280} height={560} 
                 className={`w-full h-auto relative z-0 ${theme === "dark" && `opacity-75`}`} 
               />
