@@ -56,8 +56,12 @@ export default function Hero() {
           <div className="relative">
             <div className={`absolute inset-0 backdrop-blur-xl rounded-[40px] ${theme === "dark" ? "bg-white/10" : "bg-black/5"}`}></div>
             <div className="relative overflow-hidden rounded-3xl shadow-2xl max-w-[220px] sm:max-w-[260px] md:max-w-[280px]">
-              <div className={`absolute inset-0 z-10 ${theme === "dark" ? "bg-white/20" : "bg-white/10"}`}></div>
-              <Image src="/screens/get-start.png" alt="app" width={280} height={560} className="w-full h-auto relative z-0" />
+            <div className={`absolute inset-0 z-10 ${theme === "dark" ? "bg-gradient-to-r from-fuchsia-900/10 from-40% to-green-900/5" : "bg-white/10"}`}></div>
+              <Image
+                src={theme === "dark" ? "/screens/get-started-dark.png": "/screens/get-started-light.png"}
+                alt="app" width={280} height={560} 
+                className={`w-full h-auto relative z-0 ${theme === "dark" && `opacity-75`}`} 
+              />
             </div>
           </div>
         </div>
