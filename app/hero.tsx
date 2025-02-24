@@ -5,6 +5,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
+import { FaGooglePlay } from "react-icons/fa";
+
 
 import "./animations.css";
 
@@ -37,18 +39,31 @@ export default function Hero() {
           <p className={`text-base sm:text-lg max-w-md mx-auto md:mx-0 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
             Overcome addictions with AI-powered support, a structured approach, and a supportive community.
           </p>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start gap-4">
             <Link href="#how-it-works">
               <Button
                 size="lg"
                 variant="outline"
-                className={`transition-colors px-6 py-3 text-lg ${
+                className={`transition-colors ${
                   theme === "dark"
-                    ? "bg-transparent border-white hover:bg-white/20 text-white"
-                    : "bg-transparent border-gray-900 hover:bg-gray-900/10 text-gray-900"
+                    ? "bg-black/30 hover:bg-white/20 text-white"
+                    : "bg-white/10 hover:bg-black/5 border-gray-900 text-gray-900"
                 }`}
               >
                 Learn More
+              </Button>
+            </Link>
+            <Link href="#how-it-works">
+              <Button
+                size="lg"
+                variant="outline"
+                className={`transition-colors ${
+                  theme === "dark"
+                    ? "bg-black/30 hover:bg-white/20 text-white"
+                    : "bg-white/10 hover:bg-black/5 border-gray-900 text-gray-900"
+                }`}
+              >
+                <FaGooglePlay className="mr-2" /> Available Soon
               </Button>
             </Link>
           </div>
