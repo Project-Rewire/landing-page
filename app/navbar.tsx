@@ -20,12 +20,14 @@ export default function Navbar() {
 
   return (
     <header className="flex items-center justify-center sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between px-4 md:px-8">
+      <div className="container flex h-20 items-center justify-between px-8 md:px-16">
         {/* Logo */}
-        <div className="flex items-center gap-2 font-semibold">
-          <Image src="rewire-icon.png" alt="Rewire Logo" width={24} height={24} className="object-contain" priority />
-          <span>Rewire</span>
+          <a href="https://rewireproject.site">
+        <div className="flex items-center flex-row gap-2 font-semibold">
+            <Image src="rewire-icon.png" alt="Rewire Logo" width={24} height={24} className="object-contain" priority />
+            <span>Rewire</span>
         </div>
+          </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
