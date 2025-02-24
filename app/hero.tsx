@@ -27,7 +27,7 @@ export default function Hero() {
 
   return (
     <div
-      className="relative flex items-center justify-center h-[80vh] md:h-screen w-full bg-center bg-no-repeat px-6 md:px-12 transition-colors duration-300"
+      className="relative flex items-center justify-center h-screen w-full bg-center bg-no-repeat px-6 md:px-12 transition-colors duration-300"
       style={{
         backgroundImage: currentTheme === "dark"
           ? "url('/backgrounds/neon-butterflies-dark.jpg')"
