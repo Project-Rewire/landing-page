@@ -21,7 +21,7 @@ export default function Hero() {
 
   return (
     <div
-      className="h-screen w-screen flex items-center justify-center bg-cover bg-center bg-no-repeat px-6 md:px-12 transition-colors duration-300"
+      className="flex items-center justify-center h-screen w-full bg-center bg-no-repeat px-6 md:px-12 transition-colors duration-300"
       style={{
         backgroundImage: theme === "dark" ? "url('/backgrounds/neon-butterflies-dark.jpg')" : "url('/backgrounds/neon-butterflies-light.jpg')",
         backgroundColor: theme === "dark" ? "#000" : "#fff",
@@ -55,14 +55,14 @@ export default function Hero() {
         </div>
 
         <div className="hidden md:flex md:w-1/2 justify-center">
-          <div className="relative">
+          <div className="relative border border-spacing-1 rounded-[25px]">
             <div className={`absolute inset-0 backdrop-blur-xl rounded-[40px] ${theme === "dark" ? "bg-white/10" : "bg-black/5"}`}></div>
             <div className="relative overflow-hidden rounded-3xl shadow-2xl max-w-[220px] sm:max-w-[260px] md:max-w-[280px]">
             <div className={`absolute inset-0 z-10 ${theme === "dark" ? "bg-gradient-to-r from-fuchsia-900/10 from-40% to-green-900/5" : "bg-white/10"}`}></div>
               <Image
                 src={theme === "dark" ? "/screens/get-started-dark.jpg": "/screens/get-started-light.jpg"}
                 alt="app" width={280} height={560} 
-                className={`w-full h-auto relative z-0 ${theme === "dark" && `opacity-75`} rewire-fade-in`} 
+                className={`w-full h-auto relative z-0 ${theme === "dark" && `opacity-50`} rewire-fade-in`} 
               />
             </div>
           </div>
