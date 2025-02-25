@@ -54,28 +54,25 @@ export default function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className={`w-full sm:w-auto transition-colors ${
-                  currentTheme === "dark"
-                    ? "bg-black/30 hover:bg-white/20 text-white"
-                    : "bg-white/10 hover:bg-black/5 border-gray-900 text-gray-900"
-                }`}
+                className={`w-full sm:w-auto transition-colors ${currentTheme === "dark"
+                  ? "bg-black/30 hover:bg-white/20 text-white"
+                  : "bg-white/10 hover:bg-black/5 border-gray-900 text-gray-900"
+                  }`}
               >
                 Learn More
               </Button>
             </Link>
-            <Link href="#how-it-works" className="w-full sm:w-auto">
-              <Button
-                size="lg"
-                variant="outline"
-                className={`w-full sm:w-auto transition-colors ${
-                  currentTheme === "dark"
-                    ? "bg-black/30 hover:bg-white/20 text-white"
-                    : "bg-white/10 hover:bg-black/5 border-gray-900 text-gray-900"
+            <Button
+              size="lg"
+              variant="outline"
+              className={`w-full sm:w-auto transition-colors ${currentTheme === "dark"
+                ? "bg-black/30 hover:bg-white/20 text-white"
+                : "bg-white/10 hover:bg-black/5 border-gray-900 text-gray-900"
                 }`}
-              >
-                <FaGooglePlay className="mr-2" /> Available Soon
-              </Button>
-            </Link>
+              disabled
+            >
+              <FaGooglePlay className="mr-2" /> Available Soon
+            </Button>
           </div>
         </div>
 
