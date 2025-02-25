@@ -43,10 +43,10 @@ const plans = [
 
 export default function PricingPage() {
   return (
-    <div id="pricing" className="bg-#fff0 text-white py-20 px-4">
+    <div id="pricing" className="bg-transparent text-white py-20 px-4">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold">Smart Pricing for a Smarter Recovery</h1>
+          <h1 className="text-4xl font-bold text-foreground">Smart Pricing for a Smarter Recovery</h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
           Choose a plan that gives you the flexibility and features you need.
           </p>
