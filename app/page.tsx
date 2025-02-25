@@ -16,8 +16,8 @@ export default function Page() {
       <main className="flex items-center flex-col mx-16">
         <HowItWorks />
         <Features  />
-        <AboutUs  />
         <Pricing />
+        <AboutUs  />
         <Footer />
       </main>
     </ThemeProvider>
