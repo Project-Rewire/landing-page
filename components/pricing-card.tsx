@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Check, Cross, X } from "lucide-react"
 import { PaymentModal } from "./payment-modal"
+import { PricingPlan, PricingPlanFeature } from "@/app/pricing-plan"
 
 export function PricingCard(plan: PricingPlan) {
   const [showPaymentModal, setShowPaymentModal] = useState(false)
@@ -48,7 +49,7 @@ export function PricingCard(plan: PricingPlan) {
 
           {/* Features List */}
           <ul className="space-y-3">
-            {plan.features.map((feature: PricingPlanFeature, index) => (
+            {plan.features.map((feature: PricingPlanFeature, index: number) => (
               <li key={index} className="flex items-center gap-2">
                 {feature.isAvailable ? <Check className="h-5 w-5 text-black dark:text-white" />
                   : <X className="h-5 w-5 text-black dark:text-white" />}
