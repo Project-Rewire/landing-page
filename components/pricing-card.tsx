@@ -42,7 +42,7 @@ export function PricingCard(plan: PricingPlan) {
           <Button
             className="w-full bg-black hover:bg-neutral-900 dark:bg-white dark:hover:bg-neutral-300 text-white dark:text-black font-semibold py-2 px-4 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={() => setShowPaymentModal(true)}
-            disabled={plan.isComingSoon}
+            disabled={plan.isComingSoon || !plan.isModelDisabled}
           >
             Get {plan.name}
           </Button>

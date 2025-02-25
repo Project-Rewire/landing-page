@@ -14,11 +14,12 @@ export interface PricingPlan {
     period?: string
     features: PricingPlanFeature[]
     isComingSoon: boolean
+    isModelDisabled: boolean
 }
 
 export const plans: PricingPlan[] = [
     {
-        name: "Free",
+        name: "Basic",
         price: { value: 0, unit: "$" },
         period: "life time",
         features: [
@@ -29,7 +30,8 @@ export const plans: PricingPlan[] = [
             { name: "Advance AI Models", isAvailable: false },
             { name: "Therapist Support", isAvailable: false },
         ],
-        isComingSoon: false
+        isComingSoon: false,
+        isModelDisabled: false
     },
     {
         name: "Premium",
@@ -43,7 +45,8 @@ export const plans: PricingPlan[] = [
             { name: "Advance AI Models", isAvailable: true },
             { name: "Therapist Support", isAvailable: false },
         ],
-        isComingSoon: true
+        isComingSoon: true,
+        isModelDisabled: true
     },
     {
         name: "Elite",
@@ -57,6 +60,7 @@ export const plans: PricingPlan[] = [
             { name: "Advance AI Models", isAvailable: true },
             { name: "Therapist Support", isAvailable: true },
         ],
-        isComingSoon: true
+        isComingSoon: true,
+        isModelDisabled: true
     },
 ]
