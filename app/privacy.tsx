@@ -2,7 +2,7 @@ import { FaLink } from "react-icons/fa6";
 
 export default function Privacy() {
 	return (
-		<section id="features" className="container py-24">
+		<section id="privacy" className="container py-24">
 			<h2 className="mb-16 text-center text-3xl font-bold tracking-tight">
 				Privacy by Design
 			</h2>

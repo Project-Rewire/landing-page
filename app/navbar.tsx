@@ -34,6 +34,7 @@ export default function Navbar() {
           <Link className="text-sm font-medium hover:text-green-700 transition-colors" href="#features">Features</Link>
           <Link className="text-sm font-medium hover:text-green-700 transition-colors" href="#how-it-works">How It Works</Link>
           <Link className="text-sm font-medium hover:text-green-700 transition-colors" href="#pricing">Pricing</Link>
+          <Link className="text-sm font-medium hover:text-green-700 transition-colors" href="#privacy">Privacy</Link>
           <Link className="text-sm font-medium hover:text-green-700 transition-colors" href="#about-us">About Us</Link>
           <ThemeToggle />
         </nav>
