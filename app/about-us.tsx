@@ -20,21 +20,13 @@ export default function AboutUs() {
             { name: "Harshana Chamod", role: "Team Member", img: "" },
             { name: "Randul Arampola", role: "Team Member", img: "" },
           ].map((p) => (
-            <div
-              key={p.name}
-              className="flex items-center gap-4 rounded-lg border bg-card p-6 text-center shadow-sm"
-            >
+            <div key={p.name} className="flex items-center gap-4 rounded-lg border bg-card p-6 text-center shadow-sm">
               <Avatar.Root className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-gray-300 bg-gray-200 shadow-md">
-                <Avatar.Image
-                  className="h-full w-full object-cover"
-                  src={p.img}
-                  alt={p.name}
-                />
+                <Avatar.Image className="h-full w-full object-cover" src={p.img} alt={p.name} />
                 <Avatar.Fallback className="absolute inset-0 flex items-center justify-center text-xl font-semibold text-gray-600 bg-gray-300">
-                  {p.name.split(" ")[0][0]}
+                  {p.name.split("")[0][0]}
                 </Avatar.Fallback>
               </Avatar.Root>
-
               <div className="text-left">
                 <h3 className="text-lg font-semibold">{p.name}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{p.role}</p>
