@@ -12,15 +12,15 @@ import Hero from  "./hero"
 export default function Page() {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <Navbar />
-      <Hero  />
+      <Navbar/>
+      <Hero />
       <main className="flex items-center flex-col mx-16">
-        <HowItWorks  />
-        <Features   />
-        <Privacy   />
-        <Pricing  />
-        <AboutUs />
-        <Footer />
+        <HowItWorks />
+        <Features  />
+        <Privacy  />
+        <Pricing />
+        <AboutUs/>
+        <Footer/>
       </main>
     </ThemeProvider>
   )
