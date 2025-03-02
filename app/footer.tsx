@@ -15,9 +15,9 @@ export default function Footer() {
               </a>
               &nbsp;
               <span>
-                and this is our Software Development Group Project. Rewire is a mobile app that we are developing 
-                to help individuals recover from behavioral addictions. It features a AI-powered assistant, 
-                along with a recommendation system that generates activities that helps for the recovery process, 
+                and this is our Software Development Group Project. Rewire is a mobile app that we are developing
+                to help individuals recover from behavioral addictions. It features a AI-powered assistant,
+                along with a recommendation system that generates activities that helps for the recovery process,
                 and a community platform.
               </span>
             </p>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5" />
                 isuru.20232458@iit.ac.lk
               </a>
-              <a
+              {/* <a
                 href="https://github.com/Project-Rewire"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -47,7 +47,7 @@ export default function Footer() {
               >
                 <Github className="h-5 w-5" />
                 /Project-Rewire
-              </a>
+              </a> */}
               <a
                 href="https://www.instagram.com/team_rewire/"
                 target="_blank"
