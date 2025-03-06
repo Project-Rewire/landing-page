@@ -3,16 +3,16 @@ import { FaEnvelope, FaGithub, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="border-t">
-      <div className="container px-4 sm:px-6 py-8 sm:py-12 lg:py-16">
-        <div className="grid gap-8 md:gap-12 lg:grid-cols-[60%_40%] items-start text-center md:text-left">
+      <div className="container text-muted-foreground">
+        <div className="py-12 px-8 grid gap-8 md:gap-12 lg:grid-cols-[60%_40%] items-start text-center md:text-left">
           <div className="max-w-prose mx-auto md:mx-0">
             <h3 id="about-us" className="mb-4 sm:mb-6 text-lg font-semibold">About Us</h3>
-            <p className="text-muted-foreground text-sm sm:text-base">
+            <p className="text-sm sm:text-base">
               <span>We are computer science undergraduates at</span>
               &nbsp;
-              <a 
-                href="https://www.iit.ac.lk/" 
-                className="hover:underline underline-offset-4 text-primary transition-colors" 
+              <a
+                href="https://www.iit.ac.lk/"
+                className="hover:underline underline-offset-4 transition-colors"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 sm:mt-12 lg:mt-16 border-t pt-6 sm:pt-8 text-center text-xs sm:text-sm text-muted-foreground">
+        <div className="border-t py-8 text-center text-sm">
           <p>&copy; 2025 Rewire. All rights reserved.</p>
         </div>
       </div>

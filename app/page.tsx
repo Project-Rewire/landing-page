@@ -20,8 +20,8 @@ export default function Page() {
         <Privacy   />
         <Pricing  />
         <Team    />
-        <Footer />
       </main>
+      <Footer />
     </ThemeProvider>
   )
 }

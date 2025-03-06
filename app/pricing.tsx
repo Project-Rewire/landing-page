@@ -3,7 +3,7 @@ import { plans } from "./pricing-plan"
 
 export default function Pricing() {
   return (
-    <div id="pricing" className="bg-transparent text-white py-20 px-4">
+    <div id="pricing" className="bg-transparent text-white py-20 ">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold text-foreground">Smart Pricing for a Smarter Recovery</h1>
