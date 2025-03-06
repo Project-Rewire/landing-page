@@ -1,16 +1,21 @@
-import { Mail, Github, Instagram } from "lucide-react"
+import { FaEnvelope, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="border-t">
-      <div className="container py-16">
-        <div className="grid gap-8 lg:grid-cols-[60%_40%] items-center">
-          <div>
-            <h3 id="about-us" className="mb-6 text-lg font-semibold">About Us</h3>
-            <p className="text-muted-foreground">
+      <div className="container px-4 sm:px-6 py-8 sm:py-12 lg:py-16">
+        <div className="grid gap-8 md:gap-12 lg:grid-cols-[60%_40%] items-start text-center md:text-left">
+          <div className="max-w-prose mx-auto md:mx-0">
+            <h3 id="about-us" className="mb-4 sm:mb-6 text-lg font-semibold">About Us</h3>
+            <p className="text-muted-foreground text-sm sm:text-base">
               <span>We are computer science undergraduates at</span>
               &nbsp;
-              <a href="https://www.iit.ac.lk/" className="hover:underline underline-offset-4" target="_blank">
+              <a 
+                href="https://www.iit.ac.lk/" 
+                className="hover:underline underline-offset-4 text-primary transition-colors" 
+                target="_blank"
+                rel="noreferrer"
+              >
                 IIT Sri Lanka
               </a>
               &nbsp;
@@ -22,45 +27,45 @@ export default function Footer() {
               </span>
             </p>
           </div>
-          <div>
-            <h3 className="mb-6 text-lg font-semibold">Contact Us</h3>
-            <div className="space-y-4">
+          <div className="w-full max-w-md mx-auto md:mx-0">
+            <h3 className="mb-4 sm:mb-6 text-lg font-semibold">Contact Us</h3>
+            <div className="space-y-3 sm:space-y-4 flex items-center flex-col md:items-start">
               <a
                 href="mailto:mohamad.20230343@iit.ac.lk"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                className="flex items-center gap-2 text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Mail className="h-5 w-5" />
-                mohamad.20230343@iit.ac.lk
+                <FaEnvelope className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                <span className="break-all">mohamad.20230343@iit.ac.lk</span>
               </a>
               <a
                 href="mailto:isuru.20232458@iit.ac.lk"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                className="flex items-center gap-2 text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Mail className="h-5 w-5" />
-                isuru.20232458@iit.ac.lk
+                <FaEnvelope className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                <span className="break-all">isuru.20232458@iit.ac.lk</span>
               </a>
-              {/* <a
+              <a
                 href="https://github.com/Project-Rewire"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                className="flex items-center gap-2 text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Github className="h-5 w-5" />
+                <FaGithub className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 /Project-Rewire
-              </a> */}
+              </a>
               <a
                 href="https://www.instagram.com/team_rewire/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                className="flex items-center gap-2 text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Instagram className="h-5 w-5" />
+                <FaInstagram className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 /team_rewire
               </a>
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t pt-8 text-center text-sm text-muted-foreground">
+        <div className="mt-8 sm:mt-12 lg:mt-16 border-t pt-6 sm:pt-8 text-center text-xs sm:text-sm text-muted-foreground">
           <p>&copy; 2025 Rewire. All rights reserved.</p>
         </div>
       </div>
