@@ -54,8 +54,8 @@ export default function Features() {
                 <Image
                   src={feature.image || "/placeholder.svg"}
                   alt={feature.imageAlt}
-                  width={280}
-                  height={560}
+                  width={200}
+                  height={400}
                   className="w-full"
                 />
               </div>

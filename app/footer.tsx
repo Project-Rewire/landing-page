@@ -2,8 +2,8 @@ import { FaEnvelope, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="border-t">
-      <div className="container text-muted-foreground">
+    <footer className="border-t text-muted-foreground">
+      <div className="container mx-auto">
         <div className="py-12 px-8 grid gap-8 md:gap-12 lg:grid-cols-[60%_40%] items-start text-center md:text-left">
           <div className="max-w-prose mx-auto md:mx-0">
             <h3 id="about-us" className="mb-4 sm:mb-6 text-lg font-semibold">About Us</h3>
@@ -65,9 +65,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t py-8 text-center text-sm">
-          <p>&copy; 2025 Rewire. All rights reserved.</p>
-        </div>
+      </div>
+      <div className="border-t py-8 text-center text-sm">
+        <p>&copy; 2025 Rewire. All rights reserved.</p>
       </div>
     </footer>
   );

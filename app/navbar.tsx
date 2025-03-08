@@ -19,7 +19,7 @@ export default function Navbar() {
   }, [menuOpen]);
 
   return (
-    <header className="flex items-center justify-center sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="flex items-center justify-center sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="container flex h-20 items-center justify-between px-8 md:px-16">
         {/* Logo */}
         <a href="https://rewireproject.site">
